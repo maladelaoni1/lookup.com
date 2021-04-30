@@ -27,6 +27,27 @@ device-dpi"/>
 </head>
 <body>
 
+ <style >.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  animation: ease-out;
+  animation-duration: 10s;
+}
+
+@media only screen and (max-width: 700px) {
+  .form {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .form {
+    width: 100%;
+  }
+}
+ </style>
 <form style="margin: 70px;border:1px solid #ccc; margin-top: 50px; margin-left: 300px; margin-right: 300px; background-color: skyblue; "action="localhost/lookup.com" method="post" autocomplete="on"  >
  <center><h1><strong>Ajout client</strong></h1></center> 
  <center><hr style="width: 100px; border: 5px; background-color: black; "></center>
