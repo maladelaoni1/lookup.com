@@ -27,35 +27,14 @@ device-dpi"/>
 </head>
 <body>
 
- <style >.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-  animation: ease-out;
-  animation-duration: 10s;
-}
-
-@media only screen and (max-width: 700px) {
-  .form {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .form {
-    width: 100%;
-  }
-}
- </style>
-<form style="margin: 70px;border:1px solid #ccc; margin-top: 50px; margin-left: 300px; margin-right: 300px; background-color: skyblue; "action="localhost/lookup.com" method="post" autocomplete="on"  >
+<form method="post" autocomplete="on"style="margin-left:100px; margin-right: 100px; border:1px solid #ccc; margin-top: 50px;  background-color: skyblue; "action="localhost/lookup.com" method="post" autocomplete="on"  >
  <center><h1><strong>Ajout client</strong></h1></center> 
  <center><hr style="width: 100px; border: 5px; background-color: black; "></center>
   <div>
-    <label for="Categorie">Categorie</label>
+    <label for="Categorie">Categorie </label>
     <select id="Categorie" name="Categorie" class="button">
       <option>Agent immobilier</option>
-      <option selected>Construction</option>
+      <option selected><i class="fa fa-arrow-down"></i>Construction </option>
       <option>chauffeur</option>
       <option>Arts</option>
       <option>Couture</option>
@@ -71,7 +50,7 @@ device-dpi"/>
   <div>
     <span class="areaDiv">
       <label for="name">Societe:</label>
-      <input class="input is-link" style="width: 200px;" id="Societe" name="Societe" type="text" required
+      <input class="input is-link" style="width: 280px;" id="Societe" name="Societe" type="text" required
              placeholder="Societe"
              aria-label="nom Societe">
       <span class="validity"></span>
@@ -93,14 +72,14 @@ device-dpi"/>
 <br><br>
     <span class="number1Div">
       <label for="Metier">Metier:</label>
-      <input class="input is-link" style="width: 200px;" id="Metier" name="Metier" type="text" required
+      <input class="input is-link" style="width: 280px;" id="Metier" name="Metier" type="text" required
              placeholder="Metier"  pattern="[0-9]{3}"
              aria-label="Premier fragment du numéro">
       <span class="validity"></span>
     <br><br>
     <span class="number2Div">
-      <label>Nom & Prenom</label>
-      <input class="input is-link" style="width: 200px;" id="Nom_prenom" name="Nom_prenom" type="tel" required
+      <label>Nom  :</label>
+      <input class="input is-link" style="width: 280px;" id="Nom_prenom" name="Nom_prenom" type="tel" required
              placeholder="Nom_prenom" pattern="[0-9]{4}" aria-label="Second fragment du numéro">
       <span class="validity"></span>
     </span>
